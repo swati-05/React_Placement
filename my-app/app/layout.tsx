@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Link from 'next/link';
+import Image from "next/image";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -24,11 +26,29 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+      <body>
+ <nav className = "bg-black text-white pl-60 pr-10 py-7 flex items-center justify-between">
+  <div>
+    <Image
+    src="/logo.png"
+        alt="logo"
+        width = {100}
+        height = {100}
+     />
+  </div>
+  <Link href="/duotransition">Home</Link>
+  <Link href="/duo-card-product">Services</Link>
+  <Link href="/duo-app">About</Link>
+  <Link href="/duo-portal">Courses</Link>
+  <Link href="/consumer-proposition">Placements</Link>
+  <Link href="/issuer-proposition">Videos</Link>
+  <Link href="/download-app">Contact</Link>
+</nav>
+{/* ✅ THIS IS REQUIRED for navigation to work */}
+        <main>{children}</main>
+
       </body>
     </html>
   );
 }
+ 
