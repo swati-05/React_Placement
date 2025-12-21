@@ -5,7 +5,7 @@ import { Geist, Geist_Mono,Inter ,Poppins} from "next/font/google";
 import "./globals.css";
 import Link from "next/link";
 import Image from "next/image";
-import Banner from "./component/BannerSlider"
+import Banner from "./components/BannerSlider"
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const poppins = Poppins({ subsets: ["latin"], weight: ["600"], variable: "--font-poppins" });
