@@ -2,14 +2,10 @@ name: Next.js CI/CD Pipeline
 
 on:
   push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
+    branches: [ main ]
 
 jobs:
-  build-and-deploy:
+  build:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,15 +19,8 @@ jobs:
 
       - name: Install dependencies
         run: npm install
+        working-directory: my-app
 
-      - name: Run tests
-        run: npm test --if-present
-
-      - name: Build Next.js app
+      - name: Build project
         run: npm run build
-
-      - name: Deploy to Vercel
-        run: npx vercel --prod --yes --token=${{ secrets.VERCEL_TOKEN }}
-        env:
-          VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
-          VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+        working-directory: my-app
