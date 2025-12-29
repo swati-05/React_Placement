@@ -6,9 +6,7 @@ export default function About() {
       <div className="absolute inset-0 bg-[url('/about-bg.jpg')] bg-cover bg-center"></div>
       <div className="absolute inset-0 bg-white/60"></div>
       <div className="relative z-10">
-        <h1 className={heading}>
-          About Us
-        </h1>
+        <h1 className={heading}>About Us</h1>
 
         <div className="max-w-5xl mx-auto grid grid-cols-3 gap-4 place-items-center">
           <div className="col-span-1 p-6">
