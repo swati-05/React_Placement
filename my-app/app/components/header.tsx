@@ -29,8 +29,8 @@
 
   <div className="flex gap-10 items-center pl-30">
 
-    <Link href="/duotransition">Home</Link>
-     <Link href="/duo-app">About</Link>
+    <Link href="/">Home</Link>
+     <Link href="/about">About</Link>
 
     {/* Services Dropdown */}
     <div className="relative group">
@@ -74,7 +74,7 @@
       </div>
     </div>
 
-    <Link href="/consumer-proposition">Placements</Link>
+    <Link href="/placement">Placements</Link>
     <Link href="/issuer-proposition">Videos</Link>
     <Link href="/download-app">Contact</Link>
 
