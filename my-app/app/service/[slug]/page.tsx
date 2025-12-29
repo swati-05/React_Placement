@@ -24,12 +24,21 @@ export default async function Page({ params }: PageProps) {
         <h1 className={heading}>{service.title}</h1>
         <div className="max-w-5xl mx-auto grid grid-cols-3 gap-4 place-items-center">
           <div className="col-span-1 p-6">
-            <img
-              src={service.image}
-              className="rounded-lg shadow-md"
-            />
+            <img src={service.image} className="rounded-lg shadow-md" />
           </div>
-          <div className={`col-span-2 ${paraText}`}>{service.content}</div>
+          <div className={`col-span-2 ${paraText}`}>
+            {service.content.paragraphs.map((text, i) => (
+              <p key={i} className="mb-4 text-gray-700">
+                {text}
+              </p>
+            ))}
+
+            <ul className="list-disc pl-6 space-y-2">
+              {service.content.bullets.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+          </div>
         </div>
       </div>
     </section>
