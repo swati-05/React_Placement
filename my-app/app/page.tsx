@@ -6,6 +6,7 @@ import Courses from "./components/Courses";
 import HomePageService from "./components/HomePageServices";
 import Placement from "./components/Placement";
 import Footer from "./components/Footer";
+import Service from "./components/Service";
 
 
 export default function Home() {
@@ -15,9 +16,10 @@ export default function Home() {
       <About />
       <Courses />
       <ShortServices />
-      <HomePageService />
+      {/* <HomePageService /> */}
+      <Service/>
        <Placement />
-      <Footer />
+      {/* <Footer /> */}
       
     </div>
 

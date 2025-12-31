@@ -2,28 +2,61 @@ export const Services = [
   {
     id: 1,
     slug: "it-services",
-    title: "IT SERVICES",
-    desc: "In today’s fast-paced digital landscape...",
+    title: "IT Services",
+    desc: "If you have a long term business plan and want to develop software in stages to achieve a bigger goal, Brightcode would like to be your software development firm.",
     image:
-      "https://img.freepik.com/free-vector/organic-flat-customer-support-illustration_23-2148899174.jpg?semt=ais_hybrid&w=740&q=80",
-    content: `We help businesses build, manage, and scale technology infrastructure that supports growth, performance, and innovation. From software development to IT support and managed solutions, our experts deliver reliable solutions tailored to your needs.`,
+      "https://img.freepik.com/premium-photo/business-man-touching-service-screen_218381-4151.jpg",
+    content: {
+    paragraphs: [
+      "PNB Technologies started its journey in 2018 with a group of seasoned professionals.",
+      "Today, it has spread its wings across India and empowers blue chip companies, government organizations, and enterprises with smart IT infrastructure services."
+    ],
+    bullets: [
+      "💡 Web Development Services",
+      "💡 IT Infrastructure Services",
+      "💡 Digital Marketing Services"
+    ]
+  }
   },
   {
     id: 2,
     slug: "placement",
-    title: "PLACEMENT",
-    desc: "We provide end-to-end staffing solutions...",
+    title: "Placement",
+    desc: "IT & ITES Staffing and Recruitment Services involves sourcing and providing qualified professionals to meet the workforce needs of IT and IT-enabled service companies.",
     image:
-      "https://cdn2.fptshop.com.vn/unsafe/1920x0/filters:format(webp):quality(75)/job_la_gi_thumb_ae37d17ac0.jpg",
-    content:`We provide dedicated placement support to help learners secure rewarding job opportunities with leading companies. Our career team guides you through interviews, resume building, and job placements.`  
+      "https://blog.loopcv.pro/content/images/2024/10/top-job-placement-services-loopcv.jpg",
+    content: {
+    paragraphs: [
+      "IT & ITES STAFFING AND RECRUITMENTS SERVICES"
+    ],
+    bullets: [
+      "💡 Hiring",
+      "💡 Sourcing",
+      "💡 Screening",
+      "💡 Conducting Interview",
+      "💡 Feedback",
+      "💡 Documentation",
+      "💡 Induction or On-Boarding",
+    ]
+  }
   },
   {
     id: 3,
     slug: "training",
-    title: "TRAINING",
-    desc: "Professional IT & soft skills training...",
+    title: "IT Trainings",
+    desc: "Jobs Based IT Training Services or Internship Programs refer to structured learning initiatives designed to equip individuals with practical, job-ready IT skills.",
     image:
-      "https://img.freepik.com/free-vector/organic-flat-people-business-training-illustration_23-2148902493.jpg?semt=ais_hybrid&w=740&q=80",
-    content:`Our goal is to connect learners with meaningful job opportunities in the tech industry. Many participants from our training programs go on to secure roles in leading companies, with ongoing support throughout their placement journey.` 
+      "https://www.esrichina.hk/content/dam/distributor-share/esrichina-hk/images/corporate-training.jpg",
+    content: {
+    paragraphs: [
+      "PNB Technologies started its journey in 2018 with a group of seasoned professionals.",
+      "Today, it has spread its wings across India and empowers blue chip companies, government organizations, and enterprises with smart IT infrastructure services."
+    ],
+    bullets: [
+      "💡 Web Development Services",
+      "💡 IT Infrastructure Services",
+      "💡 Digital Marketing Services"
+    ]
+  }
     },
 ];
