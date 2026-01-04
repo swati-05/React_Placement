@@ -16,8 +16,8 @@ export default function Home() {
       <About />
       <Courses />
       <ShortServices />
-      {/* <HomePageService /> */}
-      <Service/>
+      <HomePageService />
+      {/* <Service/> */}
        <Placement />
       {/* <Footer /> */}
       

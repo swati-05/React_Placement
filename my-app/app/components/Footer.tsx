@@ -16,7 +16,7 @@ import {
 
 const Footer: React.FC = () => {
   return (
-    <footer className="bg-[#44425A] text-white">
+    <footer className="bg-[#5c5a76] text-white">
       
       {/* Top Section */}
       <div className="max-w-7xl mx-auto px-6 py-14 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
@@ -26,7 +26,8 @@ const Footer: React.FC = () => {
           <h3 className="text-2xl font-semibold mb-3">Get In Touch</h3>
           <div className="w-24 h-[1px] bg-white mb-6" />
           <ul className="space-y-3 text-sm">
-            {["About Us", "Our Profile", "Career", "Blogs", "Sitemap"].map(
+            {["Noida Sector - 12 , U.P. (Currently Online Due to covid 19 - WFH).",
+             "8409803595", "pnbtechnologieshr@gmail.com"].map(
               (item) => (
                 <li
                   key={item}
@@ -45,11 +46,14 @@ const Footer: React.FC = () => {
           <div className="w-24 h-[1px] bg-white mb-6" />
           <ul className="space-y-3 text-sm">
             {[
-              "Software",
-              "Website",
-              "Mobile Apps",
-              "Bulk SMS",
-              "Project Training",
+              "Digital Marketing",
+              "AWS DevOps",
+              "PC Hardware & Networking Course",
+              // "Digital Marketing",
+              "Java Developments",
+              "IT Services",
+              "IT & ITES STAFFING AND RECRUITMENTS",
+              "IT TRAININGS SERVICES",
             ].map((item) => (
               <li
                 key={item}
@@ -68,22 +72,24 @@ const Footer: React.FC = () => {
           <ul className="space-y-4 text-sm leading-relaxed">
             <li className="flex gap-3">
               <Home size={18} />
-              2 nd. Floor, Mimec IT Park, Namkum Industrial Area,
-              Lowadih Ranchi, Jharkhand - 834010
+              Subscribe to our monthly newsletter and receive: fresh learning tips 
+              and helpful advice updates on new, free learning content the latest 
+              information and dates of our free, upcoming live lessons and 
+              community events.
             </li>
-            <li className="flex gap-3">
+            {/* <li className="flex gap-3">
               <Phone size={18} /> +91-9386806214
             </li>
             <li className="flex gap-3">
               <Mail size={18} /> info@brightcodess.com
-            </li>
+            </li> */}
           </ul>
         </div>
 
       </div>
 
       {/* Bottom Bar */}
-      <div className="bg-[#3d1678]">
+      <div className="bg-[#44425A]">
         <div className="max-w-7xl mx-auto px-6 py-5 flex flex-col md:flex-row items-center justify-between gap-4 text-sm">
 
           <p className="text-center md:text-left">
