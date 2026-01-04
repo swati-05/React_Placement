@@ -1,14 +1,16 @@
-
-
 import type { Metadata } from "next";
-import { Geist, Geist_Mono,Inter ,Poppins} from "next/font/google";
+import { Geist, Geist_Mono, Inter, Poppins } from "next/font/google";
 import "./globals.css";
-import Header from "./components/header"
+import Header from "./components/header";
 import Footer from "./components/Footer";
-import Chatbot from "./components/Chatbot"
+import Chatbot from "./components/Chatbot";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
-const poppins = Poppins({ subsets: ["latin"], weight: ["600"], variable: "--font-poppins" });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["600"],
+  variable: "--font-poppins",
+});
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -32,18 +34,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body>
-       
-<Header />
+        <Header />
 
-
-{/* ✅ THIS IS REQUIRED for navigation to work */}
+        {/* ✅ THIS IS REQUIRED for navigation to work */}
         <main>
           {children}
-          <Chatbot/>
-           <Footer />
+          <Chatbot />
+          <Footer />
         </main>
-        
-
       </body>
     </html>
   );
