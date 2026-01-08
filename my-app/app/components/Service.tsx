@@ -15,7 +15,7 @@ export default function Service() {
 
         <div className="max-w-5xl mx-auto grid grid-cols-3 gap-3 place-items-center">
           {Services.map((item, index) => (
-            <div className="col-span-1 p-6 ">
+            <div key ={index} className="col-span-1 p-6 ">
               <div className="bg-white max-w-sm p-6 border rounded-xl shadow-lg transition-all duration-300 ease-out
             hover:-translate-y-3 hover:shadow-2xl">
                 <img
